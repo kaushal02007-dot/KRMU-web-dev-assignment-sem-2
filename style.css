@@ -1,0 +1,139 @@
+:root {
+    --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --bg-gradient: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+    --card-bg: rgba(255, 255, 255, 0.95);
+    --text-main: #2d3436;
+    --text-muted: #636e72;
+    --accent: #6c63ff;
+}
+
+* {
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+}
+
+body {
+    margin: 0;
+    padding: 40px 20px;
+    background: var(--bg-gradient);
+    background-attachment: fixed;
+    font-family: 'Inter', -apple-system, sans-serif;
+    color: var(--text-main);
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.main-title {
+    text-align: center;
+    color: #fff;
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 40px;
+    text-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Dashboard Grid */
+.dashboard {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+/* Enhanced Card Style */
+.card {
+    background: var(--card-bg);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255,255,255,0.3);
+    backdrop-filter: blur(10px);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+h2 {
+    color: var(--accent);
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    border-left: 4px solid var(--accent);
+    padding-left: 15px;
+}
+
+/* Form Refinement */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+}
+
+input, select, textarea {
+    background: #f8f9fa;
+    border: 2px solid transparent;
+    padding: 12px 15px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+    background: #fff;
+    box-shadow: 0 0 0 4px rgba(108, 99, 255, 0.1);
+}
+
+/* Modern Buttons */
+.btn-primary {
+    background: var(--primary-gradient);
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(118, 75, 162, 0.3);
+}
+
+.btn-primary:hover {
+    filter: brightness(1.1);
+    box-shadow: 0 6px 20px rgba(118, 75, 162, 0.4);
+}
+
+.controls {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+/* Demo Section styling */
+.demo-section {
+    margin-top: 30px;
+}
+
+.demo-box {
+    background: #2d3436;
+    color: #dfe6e9;
+    padding: 20px;
+    border-radius: 12px;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.9rem;
+}
+
+code {
+    background: rgba(255,255,255,0.1);
+    padding: 2px 6px;
+    border-radius: 4px;
+    color: #fab1a0;
+}
